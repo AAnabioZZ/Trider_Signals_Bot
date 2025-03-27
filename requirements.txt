@@ -1,0 +1,10 @@
+python-telegram-bot~=21.11.1
+pandas~=2.2.3
+requests
+ccxt~=4.4.67
+matplotlib
+mplfinance
+TA-Lib
+python-dotenv~=1.0.1
+
+websockets~=15.0.1
