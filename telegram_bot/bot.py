@@ -1,6 +1,8 @@
 import logging
 import os
 import sys
+from telegram_bot.message_handler import test_command
+from telegram_bot.message_handler import list_pairs
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 from dotenv import load_dotenv
@@ -37,6 +39,8 @@ def main():
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("check", check_market))
+    app.add_handler(CommandHandler("test", test_command))
+    app.add_handler(CommandHandler("list", list_pairs))
     logger.info("Бот запущен ✅")
     app.run_polling()
 
