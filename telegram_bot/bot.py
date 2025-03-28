@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Импорты из проекта
 from utils.data_fetcher import fetch_ohlcv
-from strategies.strategy_manager import check_sma_crossover
+from strategies.signal_manager import check_sma_crossover
 from telegram_bot.signal_sender import send_signal
 
 # Загружаем .env
